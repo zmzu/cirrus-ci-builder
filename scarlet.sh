@@ -27,8 +27,8 @@ BUILD='clean'
 NAME='Mi A2 / 6X'
 DEVICE='wayne'
 DEVICE2='jasmine'
-CAM_LIB='3'
-HAPTICS='2'
+CAM_LIB='1'
+HAPTICS='1'
 PARTITION='DYNAMIC'
 
 # Paths
