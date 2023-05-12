@@ -13,7 +13,8 @@ task:
       memory: 32G
 
   Build_script:
-     # - apt-get update -y
+      - apt-get update -y
+      - apt-get install tzdata
      # - apt-get install git build-essential curl bc pigz cpio mkbootimg p7zip-full zipalign -y
       - ls /usr/share/zoneinfo
      # - rm -rf /etc/localtime && ln -fs /usr/share/zoneinfo/Asia/Kolkata /etc/localtime && date
