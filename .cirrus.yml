@@ -7,12 +7,13 @@ task:
   name: "Kermel-Builder"
   timeout_in: 2h
   container:
-      image: ghcr.io/neutron-toolchains/docker-image:arch-neutron
+      image: ubuntu-2204:2022.10.2
+      #image: ghcr.io/neutron-toolchains/docker-image:arch-neutron
       cpu: 8
       memory: 32G
 
   Build_script:
-      - ln -fs /usr/share/zoneinfo/Asia/Kolkata /etc/localtime && date
-      - locale-gen en_US en_US.UTF-8
+     # - ln -fs /usr/share/zoneinfo/Asia/Kolkata /etc/localtime && date
+     # - locale-gen en_US en_US.UTF-8
      # - pacman -Syu --noconfirm --needed pigz
       - bash builder.sh
