@@ -16,6 +16,6 @@ task:
       - apt-get update -y
       - DEBIAN_FRONTEND=noninteractive apt-get install git build-essential curl bc pigz cpio mkbootimg p7zip-full zipalign tzdata -y
      # - rm -rf /etc/localtime && ln -fs /usr/share/zoneinfo/Asia/Kolkata /etc/localtime && date
-     # - locale-gen en_US en_US.UTF-8
+      - locale-gen en_US en_US.UTF-8
      # - pacman -Syu --noconfirm --needed pigz
       - bash builder.sh
