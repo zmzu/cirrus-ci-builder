@@ -7,7 +7,7 @@ task:
   name: "Kermel-Builder"
   timeout_in: 2h
   container:
-      image: ubuntu-2204:2022.10.2
+      image: ubuntu:22.04
       #image: ghcr.io/neutron-toolchains/docker-image:arch-neutron
       cpu: 8
       memory: 32G
