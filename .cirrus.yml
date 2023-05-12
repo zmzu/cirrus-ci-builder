@@ -14,5 +14,5 @@ task:
   Build_script:
       - ln -fs /usr/share/zoneinfo/Asia/Kolkata /etc/localtime && date
       - locale-gen en_US en_US.UTF-8
-      - pacman -Sy --needed --noconfirm pigz hostname
+      - pacman -Sy --needed --noconfirm pigz
       - bash builder.sh
