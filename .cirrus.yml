@@ -3,7 +3,7 @@ env:
     chat_id: "ENCRYPTED[816a05e1d83f010ca1328f54a6fbd602a5d59a391399169091bc68a9e89979d469787c28a0f1584277e981689b5bc7d9]"
 
 task:
-  name: "Scarlet-X-Kernel-Builder"
+  name: "Kermel-Builder"
   timeout_in: 2h
   container:
       image: ghcr.io/neutron-toolchains/docker-image:arch-neutron
@@ -11,6 +11,6 @@ task:
       memory: 32G
 
   Build_script:
-      - ln -fs /usr/share/zoneinfo/Asia/Dhaka /etc/localtime && date
+      - ln -fs /usr/share/zoneinfo/Asia/Kolkata /etc/localtime && date
       - locale-gen en_US en_US.UTF-8
       - bash builder.sh
