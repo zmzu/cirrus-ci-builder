@@ -17,6 +17,7 @@ task:
       - apt-get install tzdata
      # - apt-get install git build-essential curl bc pigz cpio mkbootimg p7zip-full zipalign -y
       - ls /usr/share/zoneinfo
+      - export TZ='Asia/Kolkata' && date
      # - rm -rf /etc/localtime && ln -fs /usr/share/zoneinfo/Asia/Kolkata /etc/localtime && date
      # - locale-gen en_US en_US.UTF-8
      # - pacman -Syu --noconfirm --needed pigz
