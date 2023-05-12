@@ -18,4 +18,4 @@ task:
       - ln -fs /usr/share/zoneinfo/Asia/Kolkata /etc/localtime && date
      # - locale-gen en_US en_US.UTF-8
      # - pacman -Syu --noconfirm --needed pigz
-      - bash builder.sh
+     # - bash builder.sh
