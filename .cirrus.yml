@@ -14,7 +14,7 @@ task:
 
   Build_script:
       - apt-get update -y
-      - apt-get install git build-essential curl bc pigz cpio mkbootimg -y
+      - apt-get install git build-essential curl bc pigz cpio mkbootimg p7zip-full zipalign -y
       - ln -fs /usr/share/zoneinfo/Asia/Kolkata /etc/localtime && date
      # - locale-gen en_US en_US.UTF-8
      # - pacman -Syu --noconfirm --needed pigz
