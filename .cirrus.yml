@@ -7,12 +7,12 @@ task:
   name: "Kermel-Builder"
   timeout_in: 2h
   container:
-      image: ubuntu:22.04
+      image: apon77/aosp:cirrus
       cpu: 8
       memory: 32G
 
   Build_script:
-      - apt-get update -y
-      - DEBIAN_FRONTEND=noninteractive apt-get install git build-essential curl bc pigz cpio mkbootimg p7zip-full zipalign tzdata locales -y
-      - locale-gen en_US en_US.UTF-8
+    #  - apt-get update -y
+    #  - DEBIAN_FRONTEND=noninteractive apt-get install git build-essential curl bc pigz cpio mkbootimg p7zip-full zipalign tzdata locales -y
+    #  - locale-gen en_US en_US.UTF-8
       - bash builder.sh
