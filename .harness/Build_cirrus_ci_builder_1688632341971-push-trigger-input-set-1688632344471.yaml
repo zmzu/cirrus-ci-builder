@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_cirrus_ci_builder_1688632341971-push-trigger-input-set
+  identifier: Build_cirrus_ci_builder_1688632341971pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_cirrus_ci_builder_1688632341971
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
