@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_cirrus_ci_builder_1688632341971-pr-trigger-input-set
+  identifier: Build_cirrus_ci_builder_1688632341971prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_cirrus_ci_builder_1688632341971
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
